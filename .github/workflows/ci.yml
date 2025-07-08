@@ -1,0 +1,40 @@
+name: Node.js CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x, 22.x, 24.x]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: npm i
+
+    - name: List current npm dependencies
+      run: npm ls
+
+    - name: Run Svelte check
+      run: npm run check
+
+    - name: Run tsc check
+      run: npm run tsc
+
+    - name: Build
+      run: npm run build
+
+    - name: Run Vitest
+      run: npm run test

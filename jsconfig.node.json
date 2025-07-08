@@ -1,0 +1,10 @@
+{
+  "extends": "./jsconfig.base.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "node_modules/.tmp/node.tsbuildinfo",
+    "lib": ["esnext"]
+  },
+  "include": [
+    "./vite.config.js"
+  ]
+}

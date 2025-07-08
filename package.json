@@ -1,0 +1,42 @@
+{
+  "name": "@qbane/sveltekit-template",
+  "version": "0.0.5",
+  "description": "My opinionated SvelteKit template in pure JavaScript.",
+  "author": "qbane",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "svelte-kit sync || true",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.app.json",
+    "tsc": "tsc -b tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+    "test:unit": "vitest",
+    "test": "npm run test:unit -- --run"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-node": "^5.2.12",
+    "@sveltejs/kit": "^2.22.2",
+    "@sveltejs/vite-plugin-svelte": "^5.1.0",
+    "@types/node": "^22.15.34",
+    "svelte": "^5.34.9",
+    "svelte-check": "^4.2.2",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=20.0.0 <25.0.0"
+  },
+  "dependencies": {
+    "@codemirror/lang-javascript": "^6.2.4",
+    "@codemirror/lsp-client": "^6.0.0",
+    "@codemirror/state": "^6.5.2",
+    "@codemirror/view": "^6.38.0",
+    "@typescript/vfs": "^1.6.1",
+    "codemirror": "^6.0.2",
+    "vscode-languageserver": "^9.0.1"
+  }
+}

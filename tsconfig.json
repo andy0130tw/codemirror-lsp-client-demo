@@ -1,0 +1,12 @@
+{
+  "extends": "./.svelte-kit/tsconfig.json",
+  "references": [
+    { "path": "./jsconfig.app.json" },
+    { "path": "./jsconfig.vitest.json" },
+    { "path": "./jsconfig.node.json" }
+  ],
+  // ensure it a dummy config
+  "include": [],
+  "exclude": [],
+  "files": []
+}
