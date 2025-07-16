@@ -1,0 +1,13 @@
+diff --git a/node_modules/@vscode/ts-package-manager/dist/index.js b/node_modules/@vscode/ts-package-manager/dist/index.js
+index 4f3298e..ff79b3e 100644
+--- a/node_modules/@vscode/ts-package-manager/dist/index.js
++++ b/node_modules/@vscode/ts-package-manager/dist/index.js
+@@ -10,7 +10,7 @@ exports.packagePath = exports.ResolvedProject = exports.PackageManager = exports
+  *--------------------------------------------------------------------------------------------*/
+ const path_1 = require("path");
+ const node_maintainer_1 = require("../node-maintainer/node_maintainer");
+-const node_maintainer_bg_wasm_1 = __importDefault(require("../node-maintainer/node_maintainer_bg.wasm"));
++const node_maintainer_bg_wasm_1 = __importDefault(require("../node-maintainer/node_maintainer_bg.wasm?inline"));
+ (0, node_maintainer_1.initSync)(dataURItoUint8Array(node_maintainer_bg_wasm_1.default));
+ const decoder = new TextDecoder();
+ var PackageType;
