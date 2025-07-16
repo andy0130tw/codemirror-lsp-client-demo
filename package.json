@@ -1,6 +1,6 @@
 {
-  "name": "@qbane/sveltekit-template",
-  "version": "0.0.5",
+  "name": "codemirror-lsp-client-demo",
+  "version": "0.0.0",
   "description": "My opinionated SvelteKit template in pure JavaScript.",
   "author": "qbane",
   "type": "module",
@@ -31,12 +31,17 @@
     "node": ">=20.0.0 <25.0.0"
   },
   "dependencies": {
+    "@andy0130tw/vtsls-language-service": "^0.2.9-dev-browser.6",
     "@codemirror/lang-javascript": "^6.2.4",
+    "@codemirror/lint": "^6.8.5",
     "@codemirror/lsp-client": "^6.0.0",
     "@codemirror/state": "^6.5.2",
     "@codemirror/view": "^6.38.0",
-    "@typescript/vfs": "^1.6.1",
     "codemirror": "^6.0.2",
-    "vscode-languageserver": "^9.0.1"
+    "patch-package": "^8.0.0",
+    "uuid": "^11.1.0",
+    "vscode-languageserver": "^9.0.1",
+    "vscode-languageserver-protocol": "^3.17.5",
+    "vscode-uri": "^3.1.0"
   }
 }
