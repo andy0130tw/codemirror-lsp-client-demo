@@ -4,7 +4,8 @@ import {
   LSPClient,
   LSPPlugin,
   type Transport,
-} from '@codemirror/lsp-client'
+// } from '@codemirror/lsp-client'
+} from './lsp-client'
 import type { Extension, Text } from '@codemirror/state'
 import { EditorView, ViewPlugin } from '@codemirror/view'
 import type * as lsp from 'vscode-languageserver-protocol'

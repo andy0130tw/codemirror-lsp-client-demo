@@ -1,5 +1,6 @@
 import { linter, lintGutter, type Diagnostic, type LintSource } from '@codemirror/lint'
-import { LSPPlugin } from '@codemirror/lsp-client'
+// import { LSPPlugin } from '@codemirror/lsp-client'
+import { LSPPlugin } from './lsp-client'
 import { MapMode, StateEffect, StateField, type EditorState, type Extension, type Text } from '@codemirror/state'
 import type * as lsp from 'vscode-languageserver-protocol'
 
