@@ -21,7 +21,7 @@ export const basicTheme = EditorView.baseTheme({
     border: '1px solid #eee',
     background: '#f3f3f3',
     fontSize: '12px',
-    '--fontMono': 'Fira Mono',
+    '--fontMono': 'Fira Mono, monospace',
   },
   '.cm-scroller, .cm-lsp-documentation pre, .cm-lsp-signature-tooltip .cm-lsp-signature': {
     fontFamily: 'var(--font-mono)',
